@@ -23,8 +23,8 @@ class Post extends Model
     return $this::with('category')->orderBy('updated_at', 'DESC')->Paginate($limit_count);
     }
     
-     public function category()
-{
+    public function category()
+    {
     return $this->belongsTo(Category::class);
-}
+    }
 }
