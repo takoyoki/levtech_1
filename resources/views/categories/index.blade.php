@@ -26,8 +26,10 @@
                    </form>
                 </div>
             @endforeach
-            
         </div>
+        <div class=footer>
+             <a href="/">戻る</a>
+         </div>
         <div class='paginate'>{{ $posts->links()}}</div>
         <script>
             function deletePost(id) {
