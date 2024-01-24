@@ -10,6 +10,10 @@
 
        
     </head>
+    <x-app-layout>
+    <x-slot name="header">
+        　（ヘッダー名）
+    </x-slot>
     <body>
         <h1 class='title'>
             {{ $post->title}}
@@ -28,5 +32,6 @@
              <a href="/">戻る</a>
          </div>
     </body>
+    </x-app-layout>
    
 </html>
