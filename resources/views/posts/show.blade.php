@@ -10,6 +10,10 @@
 
        
     </head>
+    <x-app-layout>
+    <x-slot name="header">
+        　（ヘッダー名）
+    </x-slot>
     <body>
         <h1 class='title'>
             {{ $post->title}}
@@ -23,9 +27,11 @@
          <div class=edit>
              <a href="/posts/{{ $post->id }}/edit">edit</a>
          </div>
+         <a href="/categories/{{ $post->category->id }}">{{ $post->category->name }}</a>
          <div class=footer>
              <a href="/">戻る</a>
          </div>
     </body>
+    </x-app-layout>
    
 </html>
